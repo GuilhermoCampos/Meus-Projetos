@@ -38,10 +38,15 @@ def gravar(path, wra, gravacao):
 
 
 def adicionar(arquivo):
-    nome = str(input('Nome: '))
-    pont = 0
-    gravar(arquivo, 'a', f'{nome};{pont}\n')
-
+    try:
+        nome = str(input('Nome: ')).split().Capitalize()
+        pont = 0
+        gravar(arquivo, 'a', f'{nome};{pont}\n')
+    except:
+        print('Não foi possivel Adicionar')
+    else:
+        print(f'"{nome}"adicionado com sucesso')
+        sleep(1)
 
 def modificar(path, arquivo):
     if len(arquivo) == 0:
@@ -70,46 +75,26 @@ def modificar(path, arquivo):
 
 def removerpessoa(path, arquivo):
     pos = leiaInt('Posição: ') - 1
-    try:
-        for p , i in enumerate(arquivo):
-            i = i.split(';')
-            i[1] = i[1].replace('\n', '')
-            if p == pos and len(arquivo) > 1:
-                f = open(path, 'a')
-                del i
-                f.write(f'')
-                f.close()
-                '''
-                del i
-                for p ,i in enumerate(arquivo):
-                    if p == 0:
-                        f = open(path, 'w')
-                        f.write(f'{i[0]};{i[1]}\n')
-                    else:
-                        f.open(path, 'a')
-                        f.write(f'{i[0]};{i[1]}\n')
-                f.close()    
-                return
-                '''
-            if p == 0 and p != pos:
-                f = open(path, 'w')
-                f.write(f'{i[0]};{i[1]}\n')
-            elif pos == 0 and p == 1:
-                f = open(path, 'w')
-                f.write(f'{i[0]};{i[1]}\n')
-            elif len(arquivo) == 1:
+    del arquivo[pos]
+    if len(arquivo) == 0:
                 f = open(path, 'w')
                 f.write('')
-                f.close()
-                return
-            else:
-                f = open(path, 'a')
-                f.write(f'{i[0]};{i[1]}\n')
-        f.close()
-    except Exception as erro:
-        print(f'Falhao ao Remover da lista em arquivo: {erro.__class__}')
-        input('Enter para continuar')
-            
+    else:
+        try:
+            for p , i in enumerate(arquivo): 
+                if len(arquivo) > 0:
+                    i = i.split(';')
+                    i[1] = i[1].replace('\n', '')
+                    if p == 0:
+                        f = open(path,'w')
+                        f.write(f'{i[0]};{i[1]}\n')
+                    else:
+                        f = open(path, 'a')
+                        f.write(f'{i[0]};{i[1]}\n')
+        except Exception as erro:
+            print(f'Falhao ao Remover da lista em arquivo: {erro.__class__}')
+            input('Enter para continuar')
+    f.close()
 
 def delarquivo(path):
     import os
@@ -253,15 +238,3 @@ while True:
         print('Opção Inválida')
         sleep(2)
         continue
-'''
-#print(opc)
-abrir('test.txt')
-#gravar('test.txt', 'a', 'Guilherme;13\n') 
-#adicionar('test.txt')
-arquivo = ler('test.txt')
-#clear()
-mostrar(placar(arquivo))
-input()
-modificar('test.txt', arquivo)
-input()
-'''
