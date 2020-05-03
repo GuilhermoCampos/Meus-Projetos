@@ -39,13 +39,13 @@ def gravar(path, wra, gravacao):
 
 def adicionar(arquivo):
     try:
-        nome = str(input('Nome: ')).split().Capitalize()
+        nome = str(input('Nome: ')).capitalize().strip()
         pont = 0
         gravar(arquivo, 'a', f'{nome};{pont}\n')
     except:
         print('Não foi possivel Adicionar')
     else:
-        print(f'"{nome}"adicionado com sucesso')
+        print(f'{nome} adicionado com sucesso')
         sleep(1)
 
 def modificar(path, arquivo):
@@ -71,30 +71,53 @@ def modificar(path, arquivo):
         f.close()
     except Exception as erro:
         print(f'Falha ao Gravar lista em arquivo: {erro.__class__}')
+    else:
+        print('Pontuação Adicionada com Sucesso!')
 
 
 def removerpessoa(path, arquivo):
-    pos = leiaInt('Posição: ') - 1
-    del arquivo[pos]
     if len(arquivo) == 0:
-                f = open(path, 'w')
-                f.write('')
+        print('Lista Vazia! Não é possivel remover!')
+        input('Enter para continuar')
+        return
+    pos = leiaInt('Posição: ') - 1
+    if -1 < pos <= len(arquivo):
+        arquivo[pos] = arquivo[pos].split(';')
+        deletado = arquivo[pos][0]
+        while True:
+            certeza = str(input(f'Tem Certeza que deseja Remover {deletado}? [S/N]: ')).strip().upper()[0]
+            if certeza not in 'SN':
+                print('Escolha Inválida')
+                sleep(2)
+            else:
+                break
+        if certeza == 'N':
+            return
+        del arquivo[pos]
+        if len(arquivo) == 0:
+                    f = open(path, 'w')
+                    f.write('')
+        else:
+            try:
+                for p , i in enumerate(arquivo): 
+                    if len(arquivo) > 0:
+                        i = i.split(';')
+                        i[1] = i[1].replace('\n', '')
+                        if p == 0:
+                            f = open(path,'w')
+                            f.write(f'{i[0]};{i[1]}\n')
+                        else:
+                            f = open(path, 'a')
+                            f.write(f'{i[0]};{i[1]}\n')
+            except Exception as erro:
+                print(f'Falhao ao Remover da lista em arquivo: {erro.__class__}')
+                input('Enter para continuar')
+        f.close()
+        print(f'{deletado} foi excluido da lista com sucesso!')
+        sleep(2)
     else:
-        try:
-            for p , i in enumerate(arquivo): 
-                if len(arquivo) > 0:
-                    i = i.split(';')
-                    i[1] = i[1].replace('\n', '')
-                    if p == 0:
-                        f = open(path,'w')
-                        f.write(f'{i[0]};{i[1]}\n')
-                    else:
-                        f = open(path, 'a')
-                        f.write(f'{i[0]};{i[1]}\n')
-        except Exception as erro:
-            print(f'Falhao ao Remover da lista em arquivo: {erro.__class__}')
-            input('Enter para continuar')
-    f.close()
+        print(f'"{pos+1}" Não faz parte da lista\nRetornando ao Menu Principal...')
+        sleep(2)
 
 def delarquivo(path):
     import os
@@ -139,6 +162,10 @@ def mostrar(arquivo):
     cabecalho('Placar')
     print(f'| {"Nome":^27}||{"Pontuação":^27} |')
     linhas("=", 60)
+    if len(arquivo) == 0:
+        print(f'|{"":58}|')
+        print(f'|{"Lista Vazia":^58}|')
+        print(f'|{"":58}|')
     for p, c in enumerate(arquivo):
         print(f'| {p+1:>3} - {c[0]:<22}{c[1]:>24} pts |')
     linhas('=', 60)
@@ -192,12 +219,13 @@ while True:
             print('Não Foi possivel Adicionar Pontuação!')
             sleep(3)
         else:
-            input('Adicionado com Sucesso\nEnter para continuar')
+            input('Enter para continuar')
     elif opc == 3:
         try:    
             clear()
             mostrar(placar(ler(nome)))
             adicionar(nome)
+            input('Enter para Continuar')
         except:
             print('Não foi possivel Adicionar Pessoa')
     elif opc == 4:
