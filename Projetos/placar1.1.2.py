@@ -2,11 +2,18 @@
 
 
 def abrir(path):
+    """
+    
+    :param path: 
+    :return: 
+    """
     try:
         a = open(path, 'tr')
+        return False
     except:
-        print('Criando Arquivo...')
+        print(f'{"Criando Arquivo...":^60}')
         a = open(path, 'w+')
+        sleep(2)
     finally:
         a.close()
 
@@ -54,6 +61,11 @@ def modificar(path, arquivo):
         sleep(1)
         return
     pos = leiaInt('Posição: ') - 1
+    if pos >= len(arquivo) or pos < 0:
+        print(f'"{pos+1}" É uma posição inválida')
+        print('Por favor tente novamente')
+        sleep(3)
+        return
     pnt = leiaInt('Pontuação: ')
     try:    
         for p, i in enumerate(arquivo):
@@ -128,22 +140,26 @@ def delarquivo(path):
 # Manipulação Da Interface
 
 
-def linhas(simb, tam):
+def linhas(inicio, fim , simb, tam):
     lin = simb * tam
-    print(f'{lin}')
+    print(inicio, end='')
+    print(f'{lin}', end='')
+    print(fim)
 
 
 def cabecalho(titulo):
-    linhas('=', 60)
-    print(f'|{titulo:^58}|')
-    linhas('=', 60)
+    linhas('╔', '╗', '═', 58)
+    print(f'║{titulo:^58}║')
+    linhas('╠', '╣', '═', 58)
 
-
-def menu(lista):
+def menu(lista, ver=''):
     cabecalho('Menu Principal')
     for p, i in enumerate(lista):
-        print(f'| {p+1} - {i:<53}|')
-    linhas('=', 60)
+        if i == lista[-1]:
+            print(f'║ {p+1} - {i:<42}{ver:>10} ║')
+        else:    
+            print(f'║ {p+1} - {i:<53}║')
+    linhas('╚', '╝', '═', 58)
     opc = leiaInt('Escolha uma Opção: ')
     return opc
 
@@ -160,15 +176,15 @@ def placar(arquivo):
 
 def mostrar(arquivo):
     cabecalho('Placar')
-    print(f'| {"Nome":^27}||{"Pontuação":^27} |')
-    linhas("=", 60)
+    print(f'║ POS ║{"Nome":^40}║{"Pontuação":^11}║')
+    linhas('╠', '╣', "═", 58)
     if len(arquivo) == 0:
-        print(f'|{"":58}|')
-        print(f'|{"Lista Vazia":^58}|')
-        print(f'|{"":58}|')
+        print(f'║{"":58}║')
+        print(f'║{"Lista Vazia":^58}║')
+        print(f'║{"":58}║')
     for p, c in enumerate(arquivo):
-        print(f'| {p+1:>3} - {c[0]:<22}{c[1]:>24} pts |')
-    linhas('=', 60)
+        print(f'║ {p+1:^3} ║ {c[0]:_<38} ║ {c[1]:>5} pts ║')
+    linhas('╚', '╝', '═', 58)
     pass
 
 
@@ -193,7 +209,11 @@ def clear():
 
 # Programa Principal
 from time import sleep
-padrao = leiaInt('Arquivo Padrão[1] ou Personalizado[2]?: ')
+clear()
+cabecalho('Qual Tipo de Arquivo?')
+print(f'║{"Padrão [1]":^28}║{"Personalizado [2]":^29}║')
+linhas('╚','╝', '═', 58)
+padrao = leiaInt('Escolha: ')
 if padrao == 1:
     nome = 'placar.txt'
 if padrao == 2:
@@ -202,7 +222,7 @@ if padrao == 2:
 abrir(nome)
 while True:
     clear()
-    opc = menu(['Ler Placar', 'Adicionar Pontuação', 'Adicionar Pessoa' , 'Remover Pessoa', 'Deletar Arquivo', 'Sair'])
+    opc = menu(['Ler Placar', 'Adicionar Pontuação', 'Adicionar Pessoa' , 'Remover Pessoa', 'Deletar Arquivo', 'Sair'], 'Ver. 1.1.2')
     if opc == 1:
         try:
             clear()
@@ -250,7 +270,7 @@ while True:
             except:
                 print('Escolha Inválida!')
         if certeza == 'S':
-            print('DELETADO!')
+            print('DELETANDO!...')
             sleep(2)
             delarquivo(nome)
             break
