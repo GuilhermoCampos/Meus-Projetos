@@ -18,6 +18,7 @@ elif tamterm < 125:
 elif tamterm < 150:
     barra = 10
 
+
 def abrir(path):
     """
     Tenta abrir o arquivo no caminho que recebe. Caso não encontre o arquivo,
@@ -133,6 +134,7 @@ def modificar(path, arquivo):
     remover(path, arquivo, False)
     adicionar(path)
     pass
+
 
 def remover(path, arquivo, rem=True):
     """

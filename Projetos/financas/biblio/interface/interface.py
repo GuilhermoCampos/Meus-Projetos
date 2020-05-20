@@ -5,6 +5,7 @@ from os import get_terminal_size, system, getlogin
 tamterm = get_terminal_size()
 tamterm = tamterm[0]
 
+
 def linhas(inicio, fim , simb, tam, end='\n', flush=False):
     """
     Cria uma sequência de simbolos formando uma linha
@@ -30,6 +31,7 @@ def cabecalho(titulo, supe='╔', supd='╗', infe='╠', infd='╣'):
     linhas(supe, supd, '═', tamterm)
     print(f'║{titulo:^{tamterm - 2}}║')
     linhas(infe, infd, '═', tamterm)
+
 
 def menu(lista, ver='', supe='╔', supd='╗', infe='╠', infd='╣'):
     """
@@ -76,7 +78,6 @@ def organizar(arquivo):
     if len(arquivo) > 0:
         for linha in arquivo:
             dado = linha.split(';')
-#            dado[3] = dado[3].replace('\n', '')
             lista.append(dado[:])
     return lista
 

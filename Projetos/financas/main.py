@@ -1,7 +1,5 @@
-#from biblio.extras.extras import *
-#from biblio.arquivo.arquivo import *
-#from biblio.interface.interface import *
 from biblio.bib import *
+
 # Programa
 while True:
     # Menu Inicial
@@ -21,11 +19,7 @@ while True:
     # Menu Principal
     while True:
         clear()
-    #    print(arquivo)
-    #    print(ler(arquivo))
-    #    print(organizar(ler(arquivo)))
         atualizar(arquivo, organizar(ler(arquivo)))
-    #    print('primeiro')
         opc = mostrar(organizar(ler(arquivo)), nome)
         if opc == 1:
             adicionar(arquivo)
