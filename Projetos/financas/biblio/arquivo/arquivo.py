@@ -209,7 +209,7 @@ def limpar(path):
         print('Não foi possivel limpar o arquivo!')
 
 
-def delpasta(path):
+'''def delpasta(path):
     system(f'rmdir /s /q {path}')
     c = 0
     while c < (tamterm - 3):
@@ -231,7 +231,7 @@ def delpasta(path):
         print(f'║ {vazio} ║', flush=True)
         linhas('╚', '╝', '═', tamterm, flush=True)
     input('Enter para Continuar!')
-
+'''
 
 def delarquivo(path):
     """

@@ -1,0 +1,1135 @@
+        if cont == 1:
+            if self._1x1 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._1x2 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._1x3 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 1
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._2x1 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 1
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._2x2 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 1
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._2x3 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 1
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._3x1 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 1
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 9
+            elif self._3x2 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 1
+                elif jogada == 0:
+                    return 9
+            elif self._3x3 in 'XO':
+                jogada = randint(0, 8)
+                if jogada == 1:
+                    return 2
+                elif jogada == 2:
+                    return 3
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 5
+                elif jogada == 5:
+                    return 6
+                elif jogada == 6:
+                    return 7
+                elif jogada == 7:
+                    return 8
+                elif jogada == 0:
+                    return 1
+        elif cont == 3:
+            if self._1x1 in 'XO' and self._2x1 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9      
+            elif self._1x1 in 'XO' and self._2x1 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._2x1 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7        
+                    
+            elif self._1x1 in 'XO' and self._2x2 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._2x2 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._2x2 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 8     
+                    
+            elif self._1x1 in 'XO' and self._2x3 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._2x3 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._2x3 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7 
+                    
+            elif self._1x2 in 'XO' and self._2x1 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x2 in 'XO' and self._2x1 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x2 in 'XO' and self._2x1 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7    
+                    
+            elif self._1x2 in 'XO' and self._2x2 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x2 in 'XO' and self._2x2 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x2 in 'XO' and self._2x2 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7        
+                    
+            elif self._1x2 in 'XO' and self._2x3 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x2 in 'XO' and self._2x3 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x2 in 'XO' and self._2x3 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7  
+                    
+            elif self._1x3 in 'XO' and self._2x1 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x3 in 'XO' and self._2x1 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x3 in 'XO' and self._2x1 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7  
+                    
+            elif self._1x3 in 'XO' and self._2x2 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x3 in 'XO' and self._2x2 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x3 in 'XO' and self._2x2 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 6
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7   
+                    
+            elif self._1x3 in 'XO' and self._2x3 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x3 in 'XO' and self._2x3 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x3 in 'XO' and self._2x3 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7
+            
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._2x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 3
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._1x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 4
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._2x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 3
+                elif jogada == 1:
+                    return 4
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._2x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 3
+                elif jogada == 1:
+                    return 4
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9 
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 4
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 3
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 4
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 3
+                elif jogada == 4:
+                    return 7
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x2 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 4
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 3
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 7
+            
+            elif self._1x1 in 'XO' and self._1x3 in 'XO' and self._2x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x3 in 'XO' and self._2x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 4
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x3 in 'XO' and self._2x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x3 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 4
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x3 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 4
+                elif jogada == 5:
+                    return 9
+            elif self._1x1 in 'XO' and self._1x3 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 5
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 4
+
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._1x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._1x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._1x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._2x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 1
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 1
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 1
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x2 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 6
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 1
+                    
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._1x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._1x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._1x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._2x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 1
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._3x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 1
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 1
+                elif jogada == 5:
+                    return 9
+            elif self._2x1 in 'XO' and self._2x3 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 5
+                elif jogada == 3:
+                    return 7
+                elif jogada == 4:
+                    return 8
+                elif jogada == 5:
+                    return 1
+            
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._1x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 9
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._1x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 9
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._1x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 9
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._2x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 1
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 9
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._2x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 1
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 9
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._2x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 1
+                elif jogada == 5:
+                    return 9
+            elif self._3x1 in 'XO' and self._3x2 in 'XO' and self._3x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 1
+            
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._1x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 8
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._1x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 1
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 8
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._1x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 1
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 8
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._2x1 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 1
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 8
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._2x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 1
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 8
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._2x3 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 1
+                elif jogada == 5:
+                    return 8
+            elif self._3x1 in 'XO' and self._3x3 in 'XO' and self._3x2 in 'XO':
+                jogada = randint(0, 6)
+                if jogada == 0:
+                    return 2
+                elif jogada == 1:
+                    return 3
+                elif jogada == 2:
+                    return 4
+                elif jogada == 3:
+                    return 5
+                elif jogada == 4:
+                    return 6
+                elif jogada == 5:
+                    return 1
+        elif cont == 5:
+            if self._1x1 in 'XO' and self._1x2 in 'XO' and self._1x3 in 'XO' and self._2x1 in 'XO' and self._2x2 in 'XO':
+                pass
+        elif cont == 7:
+            pass

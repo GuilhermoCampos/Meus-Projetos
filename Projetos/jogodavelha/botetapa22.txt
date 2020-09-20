@@ -1,0 +1,76 @@
+if self._1x1 == self._1x3 == iniciar.player1:
+                return 2
+            elif self._1x1 == self._3x1 == iniciar.player1:
+                return 4
+            elif self._1x1 == self._3x3 == iniciar.player1:
+                return 5
+            elif self._2x1 == self._2x3 == iniciar.player1:
+                return 5
+            elif self._1x2 == self._3x2 == iniciar.player1:
+                return 5
+            elif self._3x1 == self._3x3 == iniciar.player1:
+                return 8
+            elif self._3x1 == self._1x3 == iniciar.player1:
+                return 5
+            elif self._1x3 == self._3x3 == iniciar.player1:
+                return 6
+            elif self._1x1 == self._1x2 == iniciar.player1:
+                return 3
+            elif self._1x1 == self._2x2 == iniciar.player1:
+                return 9
+            elif self._1x1 == self._2x1 == iniciar.player1:
+                return 7
+            elif self._1x2 == self._2x2 == iniciar.player1:
+                return 8
+            elif self._1x3 == self._2x3 == iniciar.player1:
+                return 9
+            elif self._2x1 == self._2x2 == iniciar.player1:
+                return 6
+            elif self._2x2 == self._2x3 == iniciar.player1:
+                return 4
+            elif self._3x1 == self._3x2 == iniciar.player1:
+                return 9
+            elif self._3x2 == self._3x3 == iniciar.player1:
+                return 7
+            elif self._3x1 == self._2x2 == iniciar.player1:
+                return 3
+            elif self._3x3 == self._2x2 == iniciar.player1:
+                return 1
+            elif self._3x1 == self._2x1 == iniciar.player1:
+                return 1
+            elif self._3x2 == self._2x2 == iniciar.player1:
+                return 2
+            elif self._3x3 == self._2x3 == inicuar.player1:
+                return 3
+            elif self._1x1 == iniciar.player2:
+                jog = randint(0,3)
+                if jog == 0:
+                    return 3
+                if jog == 1:
+                    return 9
+                if jog == 2:
+                    return 7
+            elif self._1x3 == iniciar.player2:
+                jog = randint(0,3)
+                if jog == 0:
+                    return 1
+                if jog == 1:
+                    return 9
+                if jog == 2:
+                    return 7
+            elif self._3x1 == iniciar.player2:
+                jog = randint(0,3)
+                if jog == 0:
+                    return 3
+                if jog == 1:
+                    return 9
+                if jog == 2:
+                    return 1
+            elif self._3x3 == iniciar.player2:
+                jog = randint(0,3)
+                if jog == 0:
+                    return 3
+                if jog == 1:
+                    return 1
+                if jog == 2:
+                    return 7

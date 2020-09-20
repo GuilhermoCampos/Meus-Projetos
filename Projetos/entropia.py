@@ -17,24 +17,25 @@ tentativas = 0
 print('Baralho Inicial:')
 for c in baralho_inicial:
     print(c)
+print('-'*20)
 print('Baralho Final:')
 for c in baralho_final:
     print(c)
-contador = 100
+#contador = 100000
 while True:
     if baralho_final != baralho_inicial:
         random.shuffle(baralho_final)
         tentativas += 1
-        contador -= 1
+#        contador -= 1
     else:
         break
-    if contador == 0:
+#    if contador == 0:
+#        os.system('cls')
 #        print('Baralho Final:')
 #        for c in baralho_final:
 #            print(c)
-        print(f'Tentativa {tentativas} e ainda falha')
-#        os.system('cls')
-        contador = 10000
+#        print(f'Tentativa {tentativas} e ainda falha')
+#        contador = 100000
 print('Baralho Final:')
 for c in baralho_final:
     print(c)
