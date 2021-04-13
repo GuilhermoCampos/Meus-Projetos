@@ -1,0 +1,49 @@
+/* Comportamento normal Destop */
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.cabecalho{
+    background:green;
+    padding:20px;
+    color:white;
+    text-align:center;
+}
+.conteudo{
+    padding:20px;
+}
+
+/* Breakpoints para resoluções espeíficas */ 
+
+@media screen and (max-width:600px){
+    .cabecalho{
+        display:none;
+        background:red;
+        height: 200px;
+    }
+    .conteudo{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1024px){
+    .cabecalho{
+        background:blue;
+        height: 100px;
+    }
+    .conteudo{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+    .cabecalho{
+        background:orange;
+        
+    }
+    .conteudo{
+        font-size: 1.2em;
+    }
+}

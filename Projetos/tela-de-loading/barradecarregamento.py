@@ -1,6 +1,7 @@
 import os, time
 c = 0
 while c < 57:
+    os.system('color 0a')
     os.system('cls')
     cheio = "■" * c
     vazio = "□"* (56 - c)
