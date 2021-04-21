@@ -23,8 +23,12 @@ body{
 
 .barra-de-navegacao{
     border-radius: 30px;
-    border: 1px solid rgb(112, 112, 112);
+    border: 3px solid rgb(0, 0, 0);
     padding: 20px;
+}
+
+.form-control{
+    color:whitesmoke;
 }
 
 .lancamento {
@@ -156,6 +160,10 @@ body{
     border-radius: 30px;
 }
 
+.texto-making-of h5, h6, p{
+    color: whitesmoke;
+}
+
 .entrevista{
     padding: 20px;
 }
@@ -207,6 +215,13 @@ body{
     border-radius: 20px;
     background-color: rgb(72, 79, 87);
     border: 1px solid rgb(70, 70, 70);
+}
+
+.estrela {
+    background-color:rgb(162, 172, 185);
+    border-radius: 30px;
+    padding: 1px 2.5px;
+    border: 1.5px solid black;
 }
 
 .tag{
@@ -263,10 +278,36 @@ body{
     .entrevista iframe{
         height: 250px;
     }
-    
+    .destaques-img img{
+        width: 300px;
+        height: 400px;
+    }
+    .mobile-hide{
+        display: none;
+    }
 }
 
-@media screen and (min-width:601px) and (max-width:1200px){
+@media screen and (min-width:601px) and (max-width:996px){
+    .carousel-item{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .lancamento-text .sinopse-mobile{
+        display: block;
+    }
+    .lancamento-text .sinopse-pc{
+        display: none;
+    }
+    .medium-hide{
+        display: none;
+    }
+}
+
+@media screen and (min-width:996) and (max-width:1400){
+    .destaques-img img{
+        width: 200px;
+        height: 300px;
+    }
     .carousel-item{
         margin-left: 0px;
         width: 100%;

@@ -13,48 +13,48 @@
 </head>
 <body>
     <div class="container corpo">
-        <header class="container barra-nav">
-            <nav class="navbar navbar-expand-xxl navbar-dark bg-dark barra-de-navegacao">
+        <header class="container barra-nav"> <!-- Não deu pra colocar sticky-top :( -->
+            <nav class="navbar navbar-expand-xl navbar-dark bg-dark barra-de-navegacao">
                 <div class="container-fluid">
                     <nav class="navbar navbar-dark bg-dark">
                         <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <img src="./img/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                            <img src="./img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                             Se Liga
                         </a>
                         </div>
                     </nav>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-secondary">Lançamentos</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-secondary">Em Destaque</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-secondary">Avaliações</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-secondary">Entrevistas & Making Of</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-secondary">Novidades</button></a>
-                    </li>
-                    </ul>
-                    <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Pesquisar Filme" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
-                    </form>
-                </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#aba-lancamento"><button type="button" class="btn btn-outline-light">Lançamentos</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#aba-destaques"><button type="button" class="btn btn-outline-light">Destaques</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#aba-avaliacao"><button type="button" class="btn btn-outline-light">Avaliações</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#aba-entrevistas"><button type="button" class="btn btn-outline-light">Entrevistas</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#aba-sobre"><button type="button" class="btn btn-outline-light">Novidades</button></a>
+                        </li>
+                        </ul>
+                        <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar Filme" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
                 </div>
             </nav>
         </header>
         <main class="container main">
-            <div class="row">
+            <div class="row" id="aba-lancamento">
                 <div class="col-12 lancamento">
                     <h1>Lançamentos</h1>
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval=""false>
@@ -87,7 +87,38 @@
                                         <br><strong>Elenco:</strong>
                                         Awkwafina | Kelly Marie Tran | Gemma Chan | Alan Tudyk 
                                         <br><Strong>Avaliação:</Strong>
-                                        <img src="./img/estrelas.png" width="100px" alt="">
+                                        <img class="estrela" src="./img/estrelas.png" width="100px" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row lancamento-conteudo">
+                                <div class="col-sm-12 col-md-6 trailer">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UkFJ90ef4_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                </div>
+                                <div class="col-sm-11 col-md-6 lancamento-text">
+                                    <div>
+                                        <h2>O Esquadrão Suicida</h2>  
+                                        <div class="sinopse-mobile">
+                                            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                              Sinopse
+                                            </button>
+                                          </p>
+                                          <div class="collapse" id="collapseExample">
+                                            <div class="card card-body usuarios bg-dark">
+                                                <strong>Sinopse:</strong> Pensado para ser uma espécie de leve reboot, a sequência de Esquadrão Suicida, da DC Comics, acompanha um novo time de vilões reunido por uma entidade governamental comandada por Amanda Waller, com o objetivo de  realizar um trabalho sujo que ninguém tem coragem de fazer.
+                                            </div>
+                                          </div>           
+                                        </div>    
+                                        <div class="sinopse-pc">                       
+                                        <strong>Sinopse:</strong>Pensado para ser uma espécie de leve reboot, a sequência de Esquadrão Suicida, da DC Comics, acompanha um novo time de vilões reunido por uma entidade governamental comandada por Amanda Waller (Viola Davis), com o objetivo de  realizar um trabalho sujo que ninguém tem coragem de fazer. O filme de ação e fantasia é baseado nos quadrinhos criados por John Ostrander para DC a Comics.
+                                        </div>
+                                        <br><strong>Diretor: </strong>James Gunn<strong>
+                                        <br>Elenco:</strong> Margot Robbie, Viola Davis, Joel Kinnaman
+                                        <br><strong>Estreia: </strong> 30/07/2021
+                                        <br><strong>Produção:</strong>Michael De Luca, Charles Roven, Peter Safran
+                                        <br><Strong>Avaliação:</Strong>
+                                        <img class="estrela" src="./img/estrelas.png" width="100px" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +151,7 @@
                                         <br><strong>Produtoras:</strong>
                                         Turner Entertainment, Warner Bros. Pictures, Warner Animation Group
                                         <br><Strong>Avaliação:</Strong>
-                                        <img src="./img/estrelas.png" width="100px" alt="">
+                                        <img class="estrela" src="./img/estrelas.png" width="100px" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +184,7 @@
                                         <br><strong>Produção:</strong>
                                         Josep Amorós, Pedro Uriol
                                         <br><Strong>Avaliação:</Strong>
-                                        <img src="./img/estrelas.png" width="100px" alt="">
+                                        <img class="estrela" src="./img/estrelas.png" width="100px" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -167,10 +198,9 @@
                         <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="aba-destaques">
                 <div class="col-12 destaques">
                     <div class="row">
                         <div class="col-sm-6 col-md-8 col-lg-10 titulo" >
@@ -196,13 +226,13 @@
                         <div class="col-sm-12 col-md-6 col-lg-3">
                             <a href="#"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/02/21/16/51/373214.jpg" alt=""></a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3 mobile-hide medium-hide">
                             <a href="#"><img src="https://i.pinimg.com/originals/61/d9/cb/61d9cbbfbe1531c6acafedb168a7b384.jpg" alt=""></a>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3">
                             <a href="#"><img src="https://br.web.img3.acsta.net/pictures/19/09/16/09/22/5277396.jpg" alt=""></a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3 mobile-hide medium-hide">
                             <a href="#"><img src="https://locusmag.com/wp-content/uploads/2020/01/rise-of-skywalker.jpg" alt=""></a>
                         </div>
                     </div>
@@ -216,7 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="aba-avaliacao">
                 <div class="col-12 avaliacao">
                     <div class="row">
                         <div class="col-sm-6 col-md-10 titulo">
@@ -242,7 +272,7 @@
 
                                             </div>
                                             <div class="col-5">
-                                                <img class="avaliacao-estrelas" src="./img/estrelas.png" alt="">
+                                                <img class="avaliacao-estrelas estrela" src="./img/estrelas.png" alt="">
                                                 
                                             </div>
                                             <div class="col-5">
@@ -268,7 +298,7 @@
 
                                             </div>
                                             <div class="col-5">
-                                                <img class="avaliacao-estrelas" src="./img/estrelas.png" alt="">
+                                                <img class="avaliacao-estrelas estrela" src="./img/estrelas.png" alt="">
                                                 
                                             </div>
                                             <div class="col-5">
@@ -278,7 +308,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4 card-usuarios">
+                            <div class="col-sm-12 col-md-6 col-lg-4 card-usuarios mobile-hide medium-hide">
                                 <div class="card bg-dark">
                                     <div class="card-body usuarios">
                                         <h5 class="card-title"><img class="foto-usuario" src="./img/usr3.jpg"> &nbsp; Victoria Arantes</h5>
@@ -294,7 +324,7 @@
 
                                             </div>
                                             <div class="col-5">
-                                                <img class="avaliacao-estrelas" src="./img/estrelas.png" alt="">
+                                                <img class="avaliacao-estrelas estrela" src="./img/estrelas.png" alt="">
                                                 
                                             </div>
                                             <div class="col-5">
@@ -316,7 +346,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row entrevistas">
+            <div class="row entrevistas" id="aba-entrevistas">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 titulo">
@@ -324,10 +354,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 card-entrevista">
+                        <div class="col-sm-12 col-md-6 col-lg-4 card-entrevista mobile-hide">
                             <div class="card bg-dark card-entrevista-div">
                                 <iframe class="entrevista" width="100%" height="400" src="https://www.youtube.com/embed/A-g3GNPnF7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div class="card-body usuarios">
+                                <div class="card-body texto-making-of">
                                   <h5 class="card-title"><strong>Filme: </strong> Kong: A Ilha da Caveira</h5>
                                   <p class="card-text"><p><strong>Diretor: </strong> Jordan Vogt-Roberts<br><strong>Roteirista: </strong> Max Borenstein | Dan Gilroy | <br> Derek Connolly<br><strong>Estreia: </strong>09/03/2017</p>
                                 </div>
@@ -336,17 +366,17 @@
                         <div class="col-sm-12 col-md-6 col-lg-4 card-entrevista">
                             <div class="card bg-dark card-entrevista-div">
                                 <iframe class="entrevista" width="100%" height="400" src="https://www.youtube.com/embed/ZqNEJFwP2s0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div class="card-body usuarios">
+                                <div class="card-body texto-making-of">
                                   <h5 class="card-title"><strong>Filme: </strong> Kubo e as Cordas Mágicas</h5>
                                   <p class="card-text"><p><strong>Diretor: </strong>Travis Knight<br><strong>Produção: </strong> Travis Knight
                                    | Arianne Sutner<br><strong>Estreia: </strong>13/10/2016</p>
                                 </div>
                               </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 card-entrevista">
+                        <div class="col-sm-12 col-md-6 col-lg-4 card-entrevista medium-hide">
                             <div class="card bg-dark card-entrevista-div">
                                 <iframe class="entrevista" width="100%" height="400" src="https://www.youtube.com/embed/Ciu5yQYwJgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div class="card-body usuarios">
+                                <div class="card-body texto-making-of">
                                   <h5 class="card-title"><strong>Filme: </strong> Vingadores: Era de Ultron</h5>
                                   <p class="card-text"><p><strong>Diretor: </strong>Joss Whedon<br><strong>Produção: </strong> Kevin Feige<br><strong>Estreia: </strong>23/04/2015</p>
                                 </div>
@@ -363,7 +393,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row sobre">
+            <div class="row" id="aba-sobre">
                 <div class="col-sm-0 col-md-0 col-lg-1">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 titulo novidades">
@@ -392,7 +422,7 @@
                             <br>Descubra como Robert Downey Jr., Chris Evans, Scarlett Johansson e outras estrelas foram escolhidos para protagonizar os filmes da Marvel..
                         </div>
                     </div>
-                    <div class="row linha-baixo materias">
+                    <div class="row linha-baixo materias mobile-hide medium-hide">
                         <div class="col-sm-12 col-lg-5">
                             <img src="https://br.web.img2.acsta.net/c_400_225/newsv7/21/04/19/20/07/1719739.jpg" alt="">
                             <div class="div-tags">
@@ -409,7 +439,7 @@
                     <div class="row">
                         <div class="col-12 titulo">
                             <h2>Sobre</h2>
-                            <p>Olá amantes da sétima arte, O Site foi desenvolvido para um projeto para a diciplina de Desenvolvimento de Interfaces Web do Curso de Sistemas de informação da Pontíficia Universidade Católica de Minas Gerais. O Projeto foi desenvolvido completamente por Guilherme Isaac Batista Oliveira Campos, desenvolvido ao longo de 2 semanas. e utilizando os conhecimentos adquiridos nas aulas do curso online, Utilizando HTML5, CSS3 e Bootstrap5, Se você está lendo isso mesmo, qualé cara eu mereço esses pontos, gastei um bom tempo nisso, me ajuda ai. O Projeto é sobre um portal de filmes, com trailers, noticias e novidades sobre o mundo da sétima arte</p>
+                            <p>Olá amantes da sétima arte, O Site foi desenvolvido para um projeto para a diciplina de Desenvolvimento de Interfaces Web do Curso de Sistemas de informação da Pontíficia Universidade Católica de Minas Gerais. O Projeto foi desenvolvido completamente por Guilherme Isaac Batista Oliveira Campos, desenvolvido ao longo de 2 semanas. e utilizando os conhecimentos adquiridos nas aulas do curso online, Utilizando HTML5, CSS3 e Bootstrap5, Se você está lendo isso mesmo, qualé cara eu mereço esses pontos, gastei um bom tempo nisso, me ajuda ai. O Projeto é sobre um portal de filmes, com trailers, noticias e novidades sobre o mundo da sétima arte.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -430,11 +460,11 @@
         </main>
         <footer class="container">
             <div class="row rodape">
-                <div class="col-sm-0 col-md-3">
+                <div class="col-sm-0 col-md-1">
 
                 </div>
-                <div class="col-sm-12 col-md-7 copy">
-                    <p>Copyright&copy; 2020 - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC Minas</strong></p>
+                <div class="col-sm-12 col-md-9 copy">
+                    <p>Copyright&copy; 2020 - <strong>Se Liga</strong> - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC Minas</strong></p>
                 </div>
                 <div class="col-sm-12 col-md-2">
                     <img class="logo-footer" src="./img/logo.png" alt="">
@@ -442,7 +472,6 @@
             </div>
         </footer>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
