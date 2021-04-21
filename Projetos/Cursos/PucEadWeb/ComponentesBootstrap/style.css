@@ -1,0 +1,58 @@
+.header{
+    background-color: rebeccapurple;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header_area{
+    padding: 20px;
+}
+
+.menu_area{
+    margin-top: 20px;
+}
+
+.active{
+    background-color: blueviolet  !important;
+}
+
+.menu_area nav a{
+    background-color: darkorchid !important;
+    color: white;
+    margin: 2px;
+}
+
+.menu_area nav a:hover{
+    background-color: blueviolet !important;
+}
+
+.logo{
+    width: 150px;
+}
+
+.main{
+
+}
+
+.main_area{
+    margin-bottom: 20px;
+}
+
+.main .card{
+    margin-bottom: 15px;
+}
+
+.footer{
+    background-color: rebeccapurple;
+    margin-top: 20px;
+    color: white;
+}
+
+.footer_area{
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-body img{
+    width: 100%;
+}

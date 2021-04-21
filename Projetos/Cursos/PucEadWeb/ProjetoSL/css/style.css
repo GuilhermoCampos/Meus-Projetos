@@ -1,0 +1,275 @@
+body{
+    background: url("https://cutewallpaper.org/21/star-wallpaper-hd/Blue-Stars-Wallpaper-62+-images-.jpg"), rgb(45, 53, 61);
+}
+
+.corpo{
+    background-color: rgb(45, 53, 61);
+    padding: 0px 20px;
+}
+
+.barra-nav{
+    background-color: rgb(72, 79, 87);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.barra-nav img{
+    background: transparent;
+}
+
+.barra-de-navegacao{
+    border-radius: 50px;
+    border: 1px solid rgb(112, 112, 112);
+    padding: 20px;
+}
+
+.lancamento {
+    background-color:rgb(72, 79, 87);
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.lancamento-conteudo{
+    padding: 20px;
+}
+
+.lancamento h1{
+    display: inline-block;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgb(42, 42, 43);
+}
+
+.carousel-item{
+    width: 80%;
+    margin-left: 120px;
+}
+
+.trailer{
+    height: 584;
+    border: 1px solid grey;
+    background-color: black;
+    border-color: rgb(105, 105, 105);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.trailer iframe{
+    border-radius: 10px;
+}
+
+.lancamento-text{
+    background-color: rgb(122, 133, 146);
+    color: whitesmoke;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.lancamento-text .sinopse-mobile{
+    display: none;
+}
+
+.titulo{
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.seletor{
+    margin-top: 30px;
+}
+
+.destaques-img img{
+    width: 300px;
+    height: 400px;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(72, 79, 87);
+    border-radius: 10px;
+}
+
+.carregar-mais{
+    margin-top: 40px;
+}
+
+.foto-usuario{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.card-usuarios{
+    margin-top: 10px;
+}
+
+.card-usuarios h5, h6{
+    color: whitesmoke;
+}
+
+.card-usuarios h6{
+    margin-top: 10px;
+}
+
+.card-usuarios p{
+    color: whitesmoke;
+}
+
+.usuarios{
+    height: 300px;
+}
+
+.texto-usuarios{
+    height: 150px;
+}
+
+.avaliacao-estrelas{
+    width: 100px;
+}
+
+.entrevistas{
+    background-color: rgb(72, 79, 87);
+    color: whitesmoke;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.card-entrevista{
+    padding: 10px;
+}
+
+.card-entrevista-div{
+    height: 450px;
+}
+
+.card-entrevista iframe{
+    border-radius: 30px;
+}
+
+.entrevista{
+    padding: 20px;
+}
+
+.carregar-mais-entrevistas{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.social img{
+    width: 32px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.linha-baixo{
+    border-bottom: 1px solid white;
+}
+
+.novidades div{
+    padding:10px;
+}
+
+.materias{
+    background-color: rgb(119, 125, 133);
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.conteudo-materia{
+    background-color: rgb(72, 79, 87);
+    color: whitesmoke;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 15px;
+}
+
+.conteudo-materia h2{
+    font-size: 1.4em;
+    margin-bottom: -10px;
+    padding-bottom: 0px;
+}
+
+.materias img{
+    margin-top: 30px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(72, 79, 87);
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.tag{
+    padding: 2px;
+    margin-left: 5px;
+    background-color: rgb(72, 79, 87);
+    color: whitesmoke;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+.tag:hover{
+    color:rgb(185, 185, 185);
+    background-color: rgb(41, 47, 54);
+}
+
+.logo-footer{
+    width: 50px;
+}
+
+.copy{
+    margin-top: 10px;
+}
+
+.rodape{
+    padding: 20px;
+    background-color: rgb(72, 79, 87);
+    color: whitesmoke;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px){
+    .carousel-item{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .trailer{
+        height: 250px;
+        padding-top: 0px;
+    }
+    .trailer iframe{
+        height: 250px;
+    }
+    .lancamento-text .sinopse-mobile{
+        display: block;
+    }
+    .lancamento-text .sinopse-pc{
+        display: none;
+    }
+    .entrevista iframe{
+        height: 250px;
+    }
+    
+}
+
+@media screen and (min-width:601px) and (max-width:1200px){
+    .carousel-item{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .lancamento-text .sinopse-mobile{
+        display: block;
+    }
+    .lancamento-text .sinopse-pc{
+        display: none;
+    }
+}
