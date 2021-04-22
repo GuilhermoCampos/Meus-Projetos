@@ -217,11 +217,15 @@ body{
     border: 1px solid rgb(70, 70, 70);
 }
 
-.estrela {
+.estrelas {
     background-color:rgb(162, 172, 185);
+    color: whitesmoke;
     border-radius: 30px;
-    padding: 1px 2.5px;
+    padding: 1px 2px 3px;
+    margin-top: 2px;
     border: 1.5px solid black;
+    font-size: 1em;
+    display: inline-block;
 }
 
 .tag{
