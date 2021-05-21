@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+        <p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" autocomplete="off">
+        </p>
+        <p>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+        </p>
+        <p>
+            <label for="Salada">Salada:</label>
+            <select name="salada" id="salada">
+                <option value="0">Verde</option>
+                <option value="1">Caprese</option>
+                <option value="2">Ceasar</option>
+                <option value="3">Salmão</option>
+                <option value="4" selected>Selecione</option>
+            </select>
+        </p>
+        <p>
+            Molho
+            <input type="radio" id="molho1" name="molho" checked /><label for="molho1"> Nenhum</label>
+            <input type="radio" id="molho2" name="molho" /><label for="molho2"> Mostarda e Mel</label>
+            <input type="radio" id="molho3" name="molho" /><label for="molho3"> Queijos</label>
+        </p>
+        <p>
+            Complementos:
+            <input type="checkbox" id="pao" name="pao" checked>
+            <label for="pao">Pão Francês</label>
+            <input type="checkbox" id="sobremesa" name="sobremesa">
+            <label for="sobremesa">Sobremesa</label>
+            
+        </p>
+</body>
+</html>

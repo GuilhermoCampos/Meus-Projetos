@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+
+    <style>
+        #l1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 45;
+        }
+        h1{
+            color: white;
+            background-color: black;
+            display: inline;
+            padding: 20px;
+            position: absolute;
+            top: 300px;
+            right: 50%;
+        }
+        #visor2{
+            top: 400px;
+        }
+        #visor3{
+            top: 500px;
+        }
+        #corpo{
+            background: radial-gradient(circle, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0,212,255));
+            width: 1000px;
+            height: 500px;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</head>
+<body id=corpo>
+    <h1 id="visor1">A Cor 1 está em: red '0' blue '0' green '0'</h1>
+    <h1 id="visor2">A Cor 2 está em: red '0' blue '0' green '0'</h1>
+    <h1 id="visor3">A Cor 3 está em: red '0' blue '0' green '0'</h1>
+
+    <button id="iniciar">Iniciar</button>
+    <button id="parar">Parar</button>
+    <button id="aumentar">Aumentar</button>
+    <button id="diminuir">Diminutir</button>
+
+    
+</body>
+</html>
