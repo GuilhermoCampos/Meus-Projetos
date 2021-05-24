@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //$('li:even').css('background-color', '#ffcccc')
+
+            //$('[lang="en"]').css('font-style', 'italic')
+            $(':lang("en")').css('font-style', 'italic');
+
+            /*$('#btn').click(function (){
+                console.log('Hello World');
+            });*/
+        });
+    </script>
+</head>
+<body>
+    <!--<p><img id="btn" src="https://picsum.photos/200/300"></p>-->
+    <h1>jQuery</h1>
+    <p>Testes com jQuery</p>
+    <p>Faremos os seguintes testes:</p>
+    <ul>
+        <li>Testes com seletores</li>
+        <li>Testes de alteração de conteudo</li>
+        <li>Testes de alteração de formatação</li>
+        <li lang="en">CSS manipulation test</li>
+        <li>Testes de criação de comportamento</li>
+    </ul>
+</body>
+</html>

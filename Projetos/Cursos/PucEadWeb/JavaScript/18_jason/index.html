@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+
+    <script>
+        let usuario = {
+            "nome": "Usuario",
+            "senha": "1234"
+        };
+        let str = JSON.stringify(usuario);
+        console.log(str);
+        console.log(usuario);
+        console.log(typeof str);
+
+        let usuario2 = JSON.parse(str);
+        console.log(usuario2);
+        console.log(typeof usuario2);
+    </script>
+</head>
+<body>
+    <h1>JavaScript Object Notation</h1>
+</body>
+</html>

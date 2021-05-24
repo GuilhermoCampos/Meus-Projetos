@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Formulário</title>
+
+    <script>
+        window.onload = () =>{
+            /*
+            submit.disabled = true;
+            let validaForm = () => {
+                if(nome.value.length == 0 || senha.value.length == 0)
+                    submit.disabled = true;
+                else submit.disabled = false;
+            };
+            nome.onchange = validaForm;
+            senha.onchange = validaForm;
+            */
+
+            login.onsubmit = (evento) => {
+                console.log({nome: nome.value, senha: senha.value})
+                console.log(evento);
+                evento.preventDefault();
+                /*if(nome.value.length == 0 || senha.value.length == 0){
+                    alert('Campos não podem ficar em branco!')
+                    return false
+                }
+                return true;*/
+                
+            };
+        };
+    </script>
+</head>
+<body>
+    <form id="login" method="post" action="https://postman-echo.com/post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" autocomplete="off">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" autocomplete="off">
+        </p>
+        <p><Button id="submit" type="submit">Confirmar</Button> </Button></p>
+
+        <p>
+            <label for="conectado">Permanecer Conectado</label>
+            <input type="checkbox" id="conectado" name="conectado">
+        </p>
+    </form>
+</body>
+</html>

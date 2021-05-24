@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Formulário</title>
+
+    <script>
+        /*let trataEvento = (evento) => console.log(`${evento.type} em ${evento.target.alt}`);*/
+        let trataEvento = (evento) => {
+            let lista = document.querySelectorAll('#imagens > img');
+            lista.forEach((i) => (i.style.border = 'thick black solid'));
+            evento.target.style.border = "thick blue solid";
+            selecionado.innerHTML = "Imagem selecionado: " + evento.target.alt;
+        };
+        window.onload = () =>{
+            let lista = document.querySelectorAll('#imagens > img');
+
+            lista.forEach( (item) => {
+                item.onclick = trataEvento;
+                /*item.onmouseover = trataEvento;
+                item.onmouseout = trataEvento;
+                item.ondrag = trataEvento;
+                item.ondblclick = trataEvento;*/
+            });
+
+            /*
+            leoa.onclick = trataEvento;
+            cachorro.onclick = trataEvento;
+            urso.onclick = trataEvento;
+            */
+        };
+    </script>
+</head>
+<body>
+    <div id="imagens">
+        <img src="https://picsum.photos/id/1074/200" alt="Leoa" id="leoa">
+        <img src="https://picsum.photos/id/237/200" alt="Cachorro" id="cachorro">
+        <img src="https://picsum.photos/id/433/200" alt="Urso" id="urso">
+    </div>
+    <p id="selecionado"></p>
+</body>
+</html>
