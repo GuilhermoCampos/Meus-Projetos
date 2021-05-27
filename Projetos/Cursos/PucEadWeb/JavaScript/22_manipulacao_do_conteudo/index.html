@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            /*$('#mais1').click(function() {
+                let valor = parseInt($('#contador').text())
+                $('#contador').text(valor + 1);
+                $('#menos1').prop('disabled', false);
+            });
+            $('#menos1').click(function() {
+                let valor = parseInt($('#contador').text())
+                if(valor>0) {
+                    $('#contador').text(valor - 1);
+                }
+                else $('#menos1').prop('disabled', true);
+            });*/
+            /*
+            $('#mais1').click(function() {
+                $('#lista').append($('<li>item</li>'));
+            });*/
+
+            let img = $('<img>', {
+                id: 'foto',
+                alt: 'foto do Picsum',
+                src: 'https://picsum.photos/200'
+            });
+            $('#p1').append(img);
+
+            let para = $('<p></p>', {
+                id: 'p2',
+                html: 'Segundo <strong>Parágrafo</strong>'
+            })
+            $('#div1').append(para);
+
+            console.log($('#div1').attr('value'));
+            console.log($('#div1').prop('value'));
+        });
+    </script>
+</head>
+<body>
+    <!--
+    <p>Contador: <span id="contador">0</span></p>
+    <p><button id="mais1">+1</button></p>
+    <p><button id="menos1">-1</button></p>
+    -->
+    <!--
+    <ul id="lista"></ul>
+    <p><button id="mais1">+1</button></p>
+    -->
+
+    <div id="div1">
+        <p id="p1"></p>
+    </div>
+    <button id="mais1">+1</button>
+</body>
+</html>
