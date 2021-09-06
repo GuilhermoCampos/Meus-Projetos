@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $('#btn').on('click', () => {
+            //     alert("Você Clicou no Botão");
+            //     //$('#btn').off('click');
+            // });
+
+            // $('#btn').on('logou', () => {
+            //     alert("Você Clicou no Botão");
+            // });
+
+            // $('#btn').trigger('logou');
+
+            $('#imagens > img').click(function (evento) {
+                $('#imagens > img').removeClass('selecionada');
+                $(this).addClass('selecionada');
+                console.log(evento.target);
+            });
+        });
+    </script>
+    <style>
+        img{
+            border: 5px solid black;
+        }
+        .selecionada {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="imagens">
+        <img src="https://picsum.photos/id/10/200" alt="" id="img1">
+        <img src="https://picsum.photos/id/20/200" alt="" id="img2">
+        <img src="https://picsum.photos/id/30/200" alt="" id="img3">
+        <img src="https://picsum.photos/id/40/200" alt="" id="img4">
+        <img src="https://picsum.photos/id/50/200" alt="" id="img5">
+    </div>
+
+    <!--<p><button id="btn">Clique aqui</button></p>-->
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //$('.lista').has('strong').addClass('marcado');
+
+            //$('.lista').filter('.teste').addClass('marcado');
+            
+            // $('.lista').filter(function(){
+            //     return $(this).hasClass('teste');
+            // }).addClass('marcado');
+            
+            let lista = $('.lista').add('#titulo')
+            .map(function () {
+                return $(this).attr('id');
+            }).get();
+
+            console.log(lista);
+
+        });
+    </script>
+    
+    <style>
+        .marcado{
+            background-color: #ffAAAA;
+        }
+    </style>
+
+</head>
+<body>
+    <ul id="titulo">
+        <li class="lista" id="l1">Item 1</li>
+        <li class="lista teste" id="l2"><strong>Item 2</strong></li>
+        <li class="lista" id="l3">Item 3</li>
+        <li class="lista teste" id="l4"><strong>Item 4</strong></li>
+        <li class="lista teste" id="l5">Item 5</li>
+    </ul>
+</body>
+</html>

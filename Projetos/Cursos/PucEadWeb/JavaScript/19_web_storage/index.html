@@ -10,7 +10,7 @@
             if (localStorage.getItem('user'))
                 nome.value = JSON.parse(localStorage.getItem('user')).nome;
             
-                login.onsubmit = (evento) => { 
+            login.onsubmit = (evento) => { 
                 //console.log({nome: nome.value, senha: senha.value})
                 let user = {nome: nome.value, senha: senha.value};
                 window.localStorage.setItem('user', JSON.stringify(user));

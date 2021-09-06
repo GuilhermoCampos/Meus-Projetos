@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $('#caixa').css('width', '100px');
+            // $('#caixa').css('height', '100px');
+            // $('#caixa').css('border', 'thin solid black');
+            // $('#caixa').css('background-color', '#ddd');
+            // $('#caixa').css('font-family', 'monospace');
+            
+            // $('#caixa')
+            //     .html('<p>Olá</p>')
+            //     .css('width', '100px')
+            //     .css('height', '100px')
+            //     .css('border', 'thin solid black')
+            //     .css('background-color', '#ddd')
+            //     .css('font-family', 'monospace');
+            
+            // $('#caixa').html('<p>Olá</p>').css({
+            //     width: '100px',
+            //     height: '100px',
+            //     border: 'thin solid black',
+            //     backgroundColor: '#fdd',
+            //     'font-family': 'monospace'});
+
+            $('#caixa').html('<p>Olá</p>');
+            $('#btn').click(function(){
+                $('#caixa').addClass('vermelho');
+            });
+            $('#btn2').click(function(){
+                $('#caixa').removeClass('vermelho');
+            });
+
+        });
+    </script>
+    <style>
+        .vermelho{
+                width: 100px;
+                height: 100px;
+                border: thin solid black;
+                background-color: #fdd;
+                font-family: monospace;
+                }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+    </div>
+    <button id="btn">Ativa Classe</button>
+    <button id="btn2">Desativa Classe</button>
+</body>
+</html>

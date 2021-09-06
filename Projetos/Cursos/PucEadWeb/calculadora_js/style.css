@@ -1,0 +1,36 @@
+#calculadora{
+    width: 25em;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+#calculadora .card-header{
+    background-color: rgb(177, 177, 177);
+    border-radius: 15px 15px 0 0;
+}
+
+#calculadora .card-body{
+    background-color: rgb(41, 41, 41);
+    border-radius: 0 0 15px 15px;
+}
+
+#calculadora #display{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+#calculadora button{
+    width: 100%;
+    margin-top: 2px;
+    margin: 5px;
+    height: 3em;
+}
+
+#calculadora .button-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+}
